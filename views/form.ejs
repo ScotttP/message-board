@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= messageForm %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Add your message:</h1>
+    <form method="POST" action="/new">
+    <label for="author">Your Name:</label>
+    <input name="author" type="text"/>
+    <label for="message">Message:</label>
+    <input name="message" type="text"/>
+    <button type="submit">Send</button>
+  </form>
+
+  <br>
+  <button><a href="/">Back to message board</a></button>
+  </body>
+</html>

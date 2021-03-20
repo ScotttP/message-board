@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Messages</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Messages Board</h1>
+    <button><a href="/new">Add a message</a></button>
+    <ul> 
+      <% messages.map((message)=>{ %>
+        <li>
+            <p>Message: <%= message.text %></p>
+            <p>From: <%= message.user %></p>
+            <p>Sent on: <%= message.added %></p>
+        </li>
+      <% }) %>
+     </ul>
+  </body>
+</html>
